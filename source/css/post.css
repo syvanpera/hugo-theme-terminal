@@ -70,7 +70,7 @@
   ul {
     list-style: none;
 
-    li:before {
+    > li:before {
       content: '►';
       position: absolute;
       left: -20px;
