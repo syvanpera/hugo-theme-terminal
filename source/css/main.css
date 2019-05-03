@@ -89,11 +89,11 @@ figure {
   }
 
   figcaption {
-    font-size: 14px;
+    font-size: 12px;
+    font-style: italic;
     padding: 5px 10px;
     margin-top: 5px;
-    background: var(--accent);
-    color: var(--background);
+    background: var(--muted);
     /* opacity: .8; */
 
     &.left {
@@ -217,7 +217,8 @@ ul, ol {
   }
 
   ul, ol {
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
 

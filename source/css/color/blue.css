@@ -21,8 +21,8 @@
   --base11: #fe8019;
   --base12: #8ec07c;
 
-  --accent: var(--base11);
-  --active: var(--base07);
+  --accent: var(--base12);
+  --muted: color-mod(var(--accent) blend(#282828 40%));
   --background: var(--base00); /* color-mod(var(--accent) blend(#1D1E28 98%)); */
   --color: var(--base06);
   --border-color: rgba(255, 255, 255, .1);
