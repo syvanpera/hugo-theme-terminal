@@ -87,27 +87,33 @@ figure {
   &.right {
     margin-left: auto;
   }
+}
 
-  figcaption {
-    font-size: 12px;
-    font-style: italic;
-    padding: 5px 10px;
-    margin-top: 5px;
-    background: var(--muted);
-    /* opacity: .8; */
+figcaption,
+.src-block-caption {
+  font-size: 12px;
+  /* font-style: italic; */
+  padding: 5px 10px;
+  margin-top: 5px;
+  background: var(--muted);
+  /* opacity: .8; */
 
-    &.left {
-      text-align: left;
-    }
-
-    &.center {
-      text-align: center;
-    }
-
-    &.right {
-      text-align: right;
-    }
+  &.left {
+    text-align: left;
   }
+
+  &.center {
+    text-align: center;
+  }
+
+  &.right {
+    text-align: right;
+  }
+}
+
+.src-block-caption {
+  margin-top: -20px;
+  margin-bottom: 25px;
 }
 
 code {
@@ -123,7 +129,7 @@ code {
 pre {
   background: transparent;
   padding: 20px 10px;
-  margin: 40px 0;
+  margin: 25px 0;
   font-size: .95rem;
   overflow: auto;
   border-top: 1px solid rgba(255, 255, 255, .1);
