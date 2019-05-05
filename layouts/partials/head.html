@@ -7,9 +7,6 @@
 
 <!-- Theme CSS -->
 <link rel="stylesheet" href="{{ "assets/style.css" | absURL }}">
-{{ if (ne $.Site.Params.ThemeColor "orange") }}
-  <link rel="stylesheet" href="{{ (printf "assets/%s.css" $.Site.Params.ThemeColor) | absURL }}">
-{{ end }}
 
 <!-- Custom CSS to override theme properties (/static/style.css) -->
 <link rel="stylesheet" href="{{ "style.css" | absURL }}">
@@ -19,7 +16,7 @@
 {{ if isset $.Site.Params "favicon" }}
 <link rel="shortcut icon" href="{{ $.Site.Params.favicon | absURL }}">
 {{ else }}
-<link rel="shortcut icon" href="{{ printf "img/favicon/%s.png" $.Site.Params.ThemeColor | absURL }}">
+<link rel="shortcut icon" href="{{ "img/favicon/default.png" | absURL }}">
 {{ end }}
 
 <!-- Twitter Card -->

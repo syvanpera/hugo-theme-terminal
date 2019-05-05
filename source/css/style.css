@@ -3,11 +3,11 @@
 @import 'font';
 @import 'buttons';
 
+@import 'main';
 @import 'header';
 @import 'logo';
 @import 'main';
 @import 'post';
 @import 'pagination';
 @import 'footer';
-
 @import 'syntax';

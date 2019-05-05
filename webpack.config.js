@@ -16,10 +16,6 @@ module.exports = {
   entry: {
     "main.js": [join("source", "js", "main.js"), join("source", "js", "menu.js")],
     "style.css": join("source", "css", "style.css"),
-    "red.css": join("source", "css", "color", "red.css"),
-    "blue.css": join("source", "css", "color", "blue.css"),
-    "green.css": join("source", "css", "color", "green.css"),
-    "pink.css": join("source", "css", "color", "pink.css"),
   },
   output: {
     filename: "[name]",
