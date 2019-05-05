@@ -6,25 +6,27 @@
 
   {{ range $paginator.Pages }}
   <div class="post on-list">
-    <h1 class="post-title">
-      <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h1>
+    <h2 class="post-title">
+      <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h2>
     <div class="post-meta">
       <span class="post-date">
-        {{ .Date.Format "02.01.2006 15:04" }}
+        published {{ .Date.Format "02.01.2006 15:04" }}
       </span>
+      {{ if or $.Site.Params.showAuthor }}
       {{ with .Params.Author }}<span class="post-author">::
         {{ . }}</span>{{ end }}
-    </div>
-
-    {{ if .Params.tags }}
-    <span class="post-tags">
-      {{ range .Params.tags }}
-      #<a href="{{ (urlize (printf "tags/%s/" . )) | absURL }}">
-        {{- . -}}
-      </a>&nbsp;
       {{ end }}
-    </span>
-    {{ end }}
+
+      {{ if .Params.tags }}
+      <span class="post-tags">
+        {{ range .Params.tags }}
+        #<a href="{{ (urlize (printf "tags/%s/" . )) | absURL }}">
+          {{- . -}}
+        </a>&nbsp;
+        {{ end }}
+      </span>
+      {{ end }}
+    </div>
 
     {{ with .Params.Cover }}
     <img src="{{ . | absURL }}" class="post-cover" />

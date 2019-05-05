@@ -13,11 +13,11 @@
   --base11: #fe8019;
   --base12: #8ec07c;
 
-  --accent: var(--base12);
+  --accent: var(--base08);
   --muted: color-mod(var(--accent) blend(#282828 40%));
   --background: var(--base00); /* color-mod(var(--accent) blend(#1D1E28 98%)); */
   --color: var(--base06);
-  --border-color: rgba(255, 255, 255, .1);
+  --border-color: var(--background);
   --base-font-size: 0.9rem;
 
   /* variables for js, must be the same as these in @custom-media queries */

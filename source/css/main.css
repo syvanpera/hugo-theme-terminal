@@ -36,7 +36,12 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-h1, h2, h3 {
+h1 {
+  font-size: 2rem;
+  color: var(--base07);
+}
+
+h2, h3 {
   font-size: 1.4rem;
 }
 
@@ -95,7 +100,8 @@ figcaption,
   /* font-style: italic; */
   padding: 5px 10px;
   margin-top: 5px;
-  background: var(--muted);
+  background: var(--accent);
+  color: var(--color);
   /* opacity: .8; */
 
   &.left {
@@ -257,6 +263,7 @@ ol ol {
 
 .content {
   display: flex;
+  margin: 20px auto;
 }
 
 hr {
