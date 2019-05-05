@@ -2,7 +2,7 @@
 
 ![Terminal](https://github.com/panr/hugo-theme-terminal/blob/master/images/screenshot.png?raw=true)
 
-### DEMO - https://hugo-terminal.now.sh/
+This theme is based on (and forked off of) [Terminal](https://github.com/panr/hugo-theme-terminal) and is inspired by [Base16](https://github.com/htdvisser/hugo-base16-theme) and the colorscheme is from [Vim Colorscheme Gruvbox] (https://github.com/morhetz/gruvbox).
 
 ---
 
